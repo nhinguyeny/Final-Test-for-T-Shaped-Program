@@ -1,5 +1,5 @@
 import { BasePage } from '@page-objects/base.page';
-import { LoginPage } from '@page-object/login-page.page;
+import { LoginPage } from '@page-objects/login-page.page';
 import { HomePage } from '@page-objects/home-page.page';
 import { type test as base } from '@playwright/test';
 import { ProfilePage } from '@page-objects/profile-page.page';
