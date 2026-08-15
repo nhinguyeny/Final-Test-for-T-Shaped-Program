@@ -1,0 +1,23 @@
+{
+  "name": "fw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "report:allure:html": "allure generate ./reports/allure-results -o ./reports/allure-html-report",
+    "report:html": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "allure-commandline": "^2.43.0"
+  },
+  "dependencies": {
+    "@allurereport/plugin-awesome": "^3.14.3",
+    "allure": "^0.0.0",
+    "allure-playwright": "^3.10.2"
+  }
+}
