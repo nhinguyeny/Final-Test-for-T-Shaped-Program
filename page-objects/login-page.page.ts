@@ -1,6 +1,7 @@
 import { Page } from "playwright";
 import { BasePage } from "./base.page";
 
+
 export class LoginPage extends BasePage {
     constructor(page: Page) {
         super(page);
@@ -27,4 +28,10 @@ export class LoginPage extends BasePage {
         await this.fillPassword(password);
         await this.clickLoginButton();
     }
+    async loginAs(username: string, password: string) {
+        await this.openUrl('/login');
+        await this.doLogin(username, password);
+
+    }
+
 }
